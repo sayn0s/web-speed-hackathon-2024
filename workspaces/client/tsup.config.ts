@@ -61,7 +61,7 @@ export default defineConfig(async (): Promise<Options[]> => {
       sourcemap: 'inline',
       splitting: false,
       target: 'esnext',
-      treeshake: true,
+      treeshake: false,
     },
   ];
 });

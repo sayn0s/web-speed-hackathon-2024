@@ -29,7 +29,7 @@ export default defineConfig(async (): Promise<Options[]> => {
       sourcemap: true,
       splitting: false,
       target: 'node18',
-      treeshake: true,
+      treeshake: false,
     },
   ];
 });
