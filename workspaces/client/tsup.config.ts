@@ -59,7 +59,6 @@ export default defineConfig(async (): Promise<Options[]> => {
       platform: 'browser',
       shims: true,
       sourcemap: true,
-      splitting: true,
       target: 'esnext',
       treeshake: false,
     },

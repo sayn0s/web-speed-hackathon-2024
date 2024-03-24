@@ -27,7 +27,6 @@ export default defineConfig(async (): Promise<Options[]> => {
       outDir: OUTPUT_DIR,
       shims: true,
       sourcemap: true,
-      splitting: true,
       target: 'node18',
       treeshake: false,
     },
