@@ -20,7 +20,7 @@ const main = async () => {
     ReactDOM.createRoot(rootElement).render(<AdminApp />);
   } else {
     ReactDOM.hydrateRoot(
-      $('#root').get(0)!,
+      rootElement,
       <SWRConfig value={{ revalidateIfStale: true, revalidateOnFocus: false, revalidateOnReconnect: false }}>
         <BrowserRouter>
           <ClientApp />
