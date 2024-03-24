@@ -101,14 +101,6 @@ const RankingList: React.FC = () => {
   );
 };
 
-const TopPageWithSuspense: React.FC = () => {
-  return (
-    <Suspense fallback={null}>
-      <TopPage />
-    </Suspense>
-  );
-};
-
 const ReleaseList: React.FC = () => {
   const todayStr = getDayOfWeekStr(new Date());
   const { data: release } = useRelease({ params: { dayOfWeek: todayStr } });
@@ -118,6 +110,14 @@ const ReleaseList: React.FC = () => {
         <BookCard key={book.id} book={book} />
       ))}
     </>
+  );
+};
+
+const TopPageWithSuspense: React.FC = () => {
+  return (
+    <Suspense fallback={null}>
+      <TopPage />
+    </Suspense>
   );
 };
 
